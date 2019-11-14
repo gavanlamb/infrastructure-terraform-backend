@@ -25,7 +25,7 @@ module "backend" {
   }
 
   dynamodb = {
-    name = "luga-terraform-remote-state-lock"
+    name = "terraform-remote-state-lock"
     tags = {
       name = "Dynamodb remote Terraform state lock store"
       service = "Terraform"
