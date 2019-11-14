@@ -17,7 +17,7 @@ module "backend" {
   group_name = "terraform-remote-state"
   iam_path = "terraform"
   s3 = {
-    name = "luga-terraform-remote-state"
+    name = "4df9-terraform-remote-state"
     tags = {
       name = "S3 remote Terraform state store"
       service = "Terraform"
