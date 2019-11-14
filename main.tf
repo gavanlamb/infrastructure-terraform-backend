@@ -14,7 +14,7 @@ terraform {
 
 module "backend" {
   source = "github.com/Haplo-tech/Terraform.Module.AWS.Backend"
-  group_name = "luga-terraform-remote-state"
+  group_name = "terraform-remote-state"
   iam_path = "terraform"
   s3 = {
     name = "luga-terraform-remote-state"
