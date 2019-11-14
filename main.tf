@@ -6,21 +6,12 @@ provider "aws" {
 
 module "backend" {
   source = "github.com/Haplo-tech/Terraform.Module.AWS.Backend"
+  company = "luga"
+  environment = "infrastructure"
+  name = "terraform-backend"
+  service = "terraform"
   group_name = "terraform-remote-state"
   iam_path = "terraform"
-  s3 = {
-    name = "4df9-terraform-remote-state"
-    tags = {
-      name = "S3 remote Terraform state store"
-      service = "Terraform"
-    }
-  }
-
-  dynamodb = {
-    name = "terraform-remote-state-lock"
-    tags = {
-      name = "Dynamodb remote Terraform state lock store"
-      service = "Terraform"
-    }
-  }
+  bucket_name = "4df9-terraform-remote-state"
+  dynamodb_name = "terraform-remote-state-lock"
 }
