@@ -18,6 +18,8 @@ terraform {
 ```
 
 ## Apply Changes
-1. `terraform plan`
-2. `terraform apply` and `yes`
+1. `terraform init`
+2. `terraform workspace new backend`
+3. `terraform plan`
+4. `terraform apply` and `yes`
 
