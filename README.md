@@ -7,7 +7,7 @@ To use add
 ```
 terraform {
     backend "s3" {
-        bucket                  = "luga-terraform-remote-state"
+        bucket                  = "4df9-terraform-remote-state"
         dynamodb_table          = "terraform-remote-state-lock"
         key                     = "state"
         region                  = "ap-southeast-2"
