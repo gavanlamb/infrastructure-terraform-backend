@@ -1,0 +1,7 @@
+environment="production"
+name="gavanlamb"
+iam_path="terraform"
+username="terraform"
+user_pgp_key="keybase:gavanlamb"
+bucket_name="terraform-state-fkhj"
+dynamodb_name="terraform-lock-fkhj"
