@@ -21,7 +21,7 @@ module "backend" {
 ```
 
 ## Adding another environment
-1. Copy [production.ap-southeast-2.tfvars](./production.ap-southeast-2.tfvars) and rename it using the following template `${environment}.${location}.tfvars`
+1. Copy [production.ap-southeast-2.tfvars](./variables/production.ap-southeast-2.tfvars) and rename it using the following template `${environment}.${location}.tfvars`
 2. Update relevant environment variables
 
 ## Apply Changes
@@ -33,6 +33,6 @@ Run changes manually
 
 2. `terraform init`
 
-3. `terraform plan -var-file=${environment}.${location}.tfvars -out=${environment}.${location}.tfplan`
+3. `terraform plan -var-file=./variables/${environment}.${location}.tfvars -out=${environment}.${location}.tfplan`
 
 4. `terraform apply -auto-approve ${environment}.${location}.tfplan`
