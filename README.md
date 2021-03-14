@@ -2,7 +2,7 @@
 Infrastructure for Terraform backend.
 
 ## About
-```hcl-terraform
+```hcl
 provider "aws" {
   region = "ap-southeast-2"
   version = "3.32.0"
