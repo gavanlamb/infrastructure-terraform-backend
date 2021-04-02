@@ -12,7 +12,7 @@ module "backend" {
   source = "github.com/gavanlamb/terraform-module-aws-backend"
   environment    = var.environment
   name           = var.name
-  iam_path	     = var.iam_path
+  iam_path.      = var.iam_path
   username       = var.username
   user_pgp_key   = var.user_pgp_key
   bucket_name    = var.bucket_name
@@ -27,9 +27,9 @@ module "backend" {
 ## Apply Changes
 Run changes manually
 1. Set CLI environment variables  
-`export AWS_ACCESS_KEY_ID="XXXXXXXADASFSDXXXXXX"`  
-`export AWS_SECRET_ACCESS_KEY="asdFDSfFsdffsfwejfc"`  
-`export AWS_DEFAULT_REGION="ap-southeast-2"`
+   `export AWS_ACCESS_KEY_ID="XXXXXXXADASFSDXXXXXX"`  
+   `export AWS_SECRET_ACCESS_KEY="asdFDSfFsdffsfwejfc"`  
+   `export AWS_DEFAULT_REGION="ap-southeast-2"`
 
 2. `terraform init`
 
