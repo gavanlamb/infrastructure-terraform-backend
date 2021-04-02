@@ -4,12 +4,12 @@ Infrastructure for Terraform backend.
 ## About
 ```hcl
 provider "aws" {
-  region = "ap-southeast-2"
+  region  = "ap-southeast-2"
   version = "3.32.0"
 }
 
 module "backend" {
-  source = "github.com/gavanlamb/terraform-module-aws-backend"
+  source         = "github.com/gavanlamb/terraform-module-aws-backend"
   environment    = var.environment
   name           = var.name
   iam_path       = var.iam_path
